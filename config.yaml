@@ -1,0 +1,17 @@
+# Short name for the pass being polled
+passname: stevens
+
+# Full URL to WSDOT rss feed
+wsdot_url: http://www.wsdot.wa.gov/traffic/rssfeeds/stevens/Default.aspx
+
+poll_interval_sec: 10
+
+# Pass notifications will be sent to each of the following IrssiNotifier
+# accounts. Each entry should map to an IrssiNotifier API token and encryption
+# password.
+# See https://irssinotifier.appspot.com/#help for Android setup instructions.
+notifiers:
+  - api_token: xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+    password: password
+  - api_token: yyyyyyyy-yyyy-yyyy-yyyy-yyyyyyyyyyyy
+    password: password
