@@ -130,9 +130,9 @@ def Poll(config_file):
       ],
   )
 
+  logging.info('Starting pass polling for %s on URL %s',
+      config['passname'], config['wsdot_url'])
   while True:
-    logging.info('Starting pass polling for %s on URL %s',
-        config['passname'], config['wsdot_url'])
     try:
       data = parser.get()
       if data is not None:
