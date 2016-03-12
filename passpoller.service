@@ -1,0 +1,16 @@
+[Unit]
+Description=Passpoller Script
+Wants=network.target
+After=network.target
+After=syslog.target
+
+[Service]
+type=simple
+PIDFile=/var/run/passpoller.pid
+WorkingDirectory=/root/passpoller/
+ExecStart=/root/passpoller/passpoller.py /root/jh_passpoller_config.yaml
+StandardOutput=syslog
+StandardError=syslog
+
+[Install]
+WantedBy=multi-user.target

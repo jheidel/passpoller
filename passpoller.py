@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 """Interface program between WSDOT pass RSS feeds and IRSSINotifier.
 
 Periodically polls the WSDOT pass RSS feed. When road conditions change, the
