@@ -122,7 +122,7 @@ def Poll(config_file):
   logging.debug('Config loaded: %s', config)
 
   parser = PassParser(config['wsdot_url'])
-  differ = PassDiffer(initial_diff=True)
+  differ = PassDiffer(initial_diff=False)
 
   notifier = multi_notifier.MultiNotifier(
       notifiers=[
